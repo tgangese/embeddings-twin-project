@@ -13,21 +13,18 @@ python demo.py
 ✨ Features
 Word2Vec from scratch: Skip-gram with Negative Sampling (NumPy only)
 GloVe from scratch: Global co-occurrence factorization with AdaGrad
-Semantic Operations: cosine similarity, analogy, semantic search
+Semantic Operations: cosine similarity, analogy (king - man + woman = queen)
 Visualization: PCA, t-SNE + similarity heatmaps
-Digital Twin Integration: Memory layer that uses embeddings for semantic recall
-📊 Real Results
+Digital Twin Integration: Memory layer for semantic recall
 
+📊 Real Results
 Vocab: 17 words | Tokens: 1005 | Pairs: 4014
-GloVe: queen -> man 0.95, king 0.93  ✅
-Word2Vec: man -> woman 0.98  ✅
+GloVe: queen -> man 0.95, king 0.93 ✅
+Word2Vec: man -> woman 0.98 ✅
 Digital Twin: Recall 'king' -> 'king rules kingdom' 0.95
 
 📊 Visuals
-Image unavailable. Please retry the request.
-Image unavailable. Please retry the request.
-Image unavailable. Please retry the request.
-Image unavailable. Please retry the request.
+Run python demo.py — plots are saved to assets/ (demo_pca.png, heatmap.png, loss.png)
 
 🔧 Install & Run
 Bash
@@ -37,4 +34,3 @@ streamlit run app.py
 pytest tests/
 Author: tgangese - Week 2.3
 MD
-
